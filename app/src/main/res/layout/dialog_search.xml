@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titleDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="جستجو"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <RelativeLayout
+            android:id="@+id/rlWrapfild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleDialog"
+            android:background="#ffffff"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvKomodi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/metKomodi"
+                android:layout_alignLeft="@+id/tvCat"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/metKomodi"
+                android:gravity="center_vertical"
+                android:text="کُمُدی:"
+                android:visibility="gone" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/metKomodi"
+                style="@style/MaterialEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/tvKomodi"
+                android:hint="اسم کُمُدی"
+                android:inputType="text"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/spCategory"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/spCategory"
+                android:layout_below="@id/tvKomodi"
+                android:gravity="center_vertical"
+                android:text="دسته بندی:"/>
+
+            <Spinner
+                android:id="@+id/spCategory"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/metKomodi"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/tvCat"
+                android:background="@drawable/spinner_bg"/>
+
+            <TextView
+                android:id="@+id/tvCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/mspCity"
+                android:layout_alignLeft="@+id/tvCat"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/mspCity"
+                android:layout_below="@+id/tvCat"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:text="شهر"/>
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/mspCity"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spCategory"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@id/tvCity"
+                android:background="@drawable/spinner_bg"
+                />
+
+            <TextView
+                android:id="@+id/tvCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/spCondition"
+                android:layout_alignLeft="@+id/tvCity"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/spCondition"
+                android:layout_below="@+id/tvCity"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:text="وضعیت"/>
+
+            <Spinner
+                android:id="@+id/spCondition"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/mspCity"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@id/tvCondition"
+                android:background="@drawable/spinner_bg"/>
+
+
+            <TextView
+                android:id="@+id/tvPriceRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/spPriceRange"
+                android:layout_alignLeft="@+id/tvCondition"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/spPriceRange"
+                android:layout_below="@+id/tvCondition"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:text="قیمت"/>
+
+            <Spinner
+                android:id="@+id/spPriceRange"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spCondition"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@id/tvPriceRange"
+                android:background="@drawable/spinner_bg"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/rlWrapfild"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.Button
+                android:id="@+id/btnSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:clickable="false"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="جستجو"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:rd_enable="true"
+                app:rd_rippleType="wave"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

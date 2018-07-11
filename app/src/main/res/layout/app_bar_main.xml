@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.komodaa.app.activities.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--app:popupTheme="@style/AppTheme.PopupOverlay"/>-->
+        <include layout="@layout/custom_toolbar" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            style="@style/PageTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c9cbc8" />
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<include layout="@layout/content_main"/>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_labels_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:menu_icon="@drawable/menu_w"
+        fab:menu_backgroundColor="#ccffffff"
+        fab:menu_colorNormal="#f6a61d"
+        fab:menu_colorPressed="#bc7f16"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_position="right"
+        fab:menu_labels_singleLine="true"
+        fab:menu_labels_textSize="18sp">
+
+        <!--<com.github.clans.fab.FloatingActionButton-->
+        <!--android:id="@+id/fab_purchased"-->
+        <!--style="@style/MenuButtonsGreen"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/reside_pardakht_w"-->
+        <!--fab:fab_label="ثبت رسید پرداخت"-->
+        <!--fab:fab_size="normal"/>-->
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_add"
+            style="@style/MenuButtonsGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_item_w"
+            fab:fab_label="فروش آیتم"
+            fab:fab_size="normal" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_request"
+            style="@style/MenuButtonsGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/darkhast_w"
+            fab:fab_label="درخواست آیتم"
+            fab:fab_size="normal" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</android.support.design.widget.CoordinatorLayout>

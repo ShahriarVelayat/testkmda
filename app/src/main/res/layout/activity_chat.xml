@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_chat"
+    tools:context="com.komodaa.app.activities.ChatActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:id="@+id/TBContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <com.pkmmte.view.CircularImageView
+                android:id="@+id/imgTBAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                app:border="true"
+                app:border_color="#EEEEEE"
+                app:border_width="2dp"
+                app:shadow="true" />
+
+            <TextView
+                android:id="@+id/tvTBTitle"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/imgTBAvatar"
+                android:fontFamily="@font/iran_sans"
+                android:gravity="center" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rlSend"
+        android:layout_below="@id/toolbar">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/newMsgNotifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/recList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_round_corner"
+        android:padding="8dp"
+        android:text="پیام جدیدی دریافت کردید"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+
+        <com.rey.material.widget.ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#790099"
+            android:src="@drawable/btn_send"
+            app:rd_enable="true"
+            app:rd_rippleType="wave" />
+
+        <EditText
+
+            android:id="@+id/etComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@id/btnSend"
+            android:background="@android:color/transparent"
+            android:hint="پیامت رو بنویس..."
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:minHeight="44dp"
+            android:minLines="1"
+            android:paddingLeft="8dp"
+            android:textColorHint="#8e8d8d" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b6ffffff"
+        android:visibility="gone">
+
+        <com.rey.material.widget.ProgressView
+            android:id="@+id/progress"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            app:pv_autostart="true"
+            app:pv_circular="true"
+            app:pv_progressMode="indeterminate" />
+    </RelativeLayout>
+</RelativeLayout>

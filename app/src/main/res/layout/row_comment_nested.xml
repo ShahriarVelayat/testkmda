@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#e7e7e7"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/rlComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/imgNested"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/imgAvatar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_three_way"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/imgJoint"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignBottom="@+id/tvCommentText"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imgNested"
+            android:layout_alignTop="@+id/imgAvatar"
+            android:background="@drawable/ic_nested_joint"
+            android:visibility="visible" />
+
+        <com.pkmmte.view.CircularImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginBottom="8dp"
+            android:layout_toLeftOf="@+id/imgNested"
+            android:scaleType="fitCenter"
+            android:src="@drawable/no_avatar" />
+        <TextView
+            android:id="@+id/tvCommentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/imgAvatar"
+            android:layout_toStartOf="@+id/imgAvatar"
+            android:gravity="right"
+            android:text="مریم (۲ شهریور ۹۵)"
+            android:textColor="@color/comment_title"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCommentRepliedTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/imgReply"
+            android:layout_toLeftOf="@+id/tvCommentTitle"
+            android:layout_toRightOf="@+id/imgReply"
+            android:layout_toStartOf="@+id/tvCommentTitle"
+            android:gravity="right"
+            android:text=""
+            android:textColor="@color/comment_text"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvCommentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCommentTitle"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/imgAvatar"
+            android:layout_toStartOf="@+id/imgAvatar"
+            android:gravity="right"
+            android:text="میتونم این لباس رو از نزدیک ببینم ؟"
+            android:textColor="@color/comment_text" />
+
+        <ImageView
+            android:id="@+id/imgReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_action_reply" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/intro_4"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:orientation="vertical">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="96dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_rounded_corner"
+            android:backgroundTint="#16c76d"
+            android:gravity="center"
+            android:text="ثبت نام"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:rd_cornerRadius="8dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btnLogin"
+            android:layout_width="96dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_rounded_corner"
+            android:backgroundTint="#f68f8a"
+            android:gravity="center"
+            android:text="ورود"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:rd_cornerRadius="8dp"
+            app:rd_enable="true"
+            app:rd_rippleType="wave" />
+    </LinearLayout>
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginTop="150dp"-->
+    <!--app:srcCompat="@drawable/closet_4"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvDesc"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/imageView2"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:layout_marginTop="-24dp"-->
+    <!--android:gravity="right"-->
+    <!--android:padding="8dp"-->
+    <!--android:text="@string/slide_string_4"-->
+    <!--android:textColor="#4e4d49"-->
+    <!--android:textSize="14sp"/>-->
+
+</LinearLayout>

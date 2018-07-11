@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/rlHeaderContainer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_close_48dp" />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/imgClose"
+            android:gravity="center"
+            android:text="امتیاز"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlHeaderContainer"
+        android:gravity="right"
+        android:textColor="#3b3a3a"
+        android:padding="16dp"
+        android:text="به هر یک از موارد سفارش خود چه امتیازی می‌دهید ؟"
+        android:textSize="16sp" />
+
+
+
+    <com.rey.material.widget.Button
+        android:id="@+id/btnNotNow"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tvCaption"
+        android:layout_marginTop="32dp"
+        android:background="@color/promoted_item"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="نظر نمیدم"
+        android:textColor="#ffffff"
+        app:rd_enable="true"
+        app:rd_rippleType="wave" />
+
+    <com.rey.material.widget.Button
+
+        android:id="@+id/btnRate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tvCaption"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@id/btnNotNow"
+        android:background="@color/colorPrimary"
+        android:text="ثبت امتیاز"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:rd_enable="true"
+        app:rd_rippleType="wave" />
+</RelativeLayout>

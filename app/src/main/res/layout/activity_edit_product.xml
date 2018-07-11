@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.komodaa.app.activities.AddProductStep2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/metPrice"
+            style="@style/MaterialEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="قیمت فروش (تومان)"
+            android:inputType="numberSigned" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="حداقل 50% قیمت اصلی"
+                android:textColor="@color/notification_error"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llAttribsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:divider="@drawable/linear_spacing"
+            android:orientation="vertical"
+            android:showDividers="middle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="توضیحات آیتم" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/metDescription"
+            style="@style/MaterialEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="top"
+            android:hint="توضیحات بیشتر"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="5" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.Button
+                android:id="@+id/btnFeatured"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:background="@color/promoted_item"
+                android:text="تبدیل به ویژه"
+                android:textColor="#ffffff"
+                app:rd_enable="true"
+                app:rd_rippleType="wave" />
+
+            <com.rey.material.widget.Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#795696"
+                android:text="بفرست داخل کمدا"
+                android:textColor="#ffffff"
+                app:rd_enable="true"
+                app:rd_rippleType="wave" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

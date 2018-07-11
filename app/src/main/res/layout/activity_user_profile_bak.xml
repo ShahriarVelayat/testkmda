@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.komodaa.app.activities.UserProfileActivity">
+
+        <com.pkmmte.view.CircularImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="104dp"
+            android:layout_height="104dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_account_circle_48px"
+            app:border="true"
+            app:border_color="#EEEEEE"
+            app:border_width="2dp"
+            app:shadow="true" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btnFollow"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/imgAvatar"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/imgAvatar"
+            android:layout_toRightOf="@id/btnChat"
+            android:background="@color/btn_bg"
+            android:text="دنبال کن"
+            android:textColor="#ffffff"
+            app:rd_enable="true"
+            app:rd_rippleType="wave" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btnChat"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/imgAvatar"
+            android:layout_alignParentLeft="true"
+            android:background="@color/colorPrimary"
+            android:text="چت"
+            android:textColor="#ffffff"
+            app:rd_enable="true"
+            app:rd_rippleType="wave" />
+
+        <com.rey.material.widget.ProgressView
+            android:id="@+id/progress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/btnFollow"
+            android:layout_alignLeft="@+id/btnFollow"
+            android:layout_alignTop="@+id/btnFollow"
+            android:visibility="invisible"
+            app:pv_autostart="true"
+            app:pv_circular="true"
+            app:pv_progressMode="indeterminate"
+            app:pv_progressStyle="@style/DarkCircularProgressDrawable" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnFollow"
+            android:layout_alignRight="@+id/btnFollow"
+            android:layout_alignTop="@+id/imgAvatar"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@+id/imgAvatar"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvFollowersCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvItemsCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgAvatar"
+            android:layout_marginTop="24dp"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUserTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUserName"
+            android:layout_marginTop="4dp"
+            android:gravity="right" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvUserTitle">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp" />
+
+            <com.rey.material.widget.ProgressView
+                android:id="@+id/itemsProgress"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                app:pv_autostart="true"
+                app:pv_circular="true"
+                app:pv_progressMode="indeterminate"
+                app:pv_progressStyle="@style/LoadingCircularProgressDrawable" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
+

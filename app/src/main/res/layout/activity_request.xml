@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.komodaa.app.activities.RequestActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="1"
+        tools:context="com.komodaa.app.activities.SignupActivity">
+
+
+        <ImageView
+            android:id="@+id/imgCategory"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spCategory"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/spCategory"
+            android:padding="2dp"
+            android:src="@drawable/ic_action_category"/>
+
+        <Spinner
+            android:id="@+id/spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/imgCategory"
+            android:background="@drawable/spinner_bg"/>
+
+        <ImageView
+            android:id="@+id/imgCity"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mspCity"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/mspCity"
+            android:layout_below="@+id/imgCategory"
+            android:padding="7dp"
+            android:src="@drawable/ic_place_black_24dp"/>
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/mspCity"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spCategory"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@+id/imgCity"
+            android:background="@drawable/spinner_bg"
+            android:entries="@array/cities"/>
+
+        <ImageView
+            android:id="@+id/imgTime"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/metTime"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/metTime"
+            android:layout_below="@+id/imgCity"
+            android:padding="2dp"
+            android:src="@drawable/ic_action_time"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+
+            android:id="@+id/metTime"
+            style="@style/MaterialEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mspCity"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@+id/imgTime"
+            android:gravity="top"
+            android:hint="مهلت"
+            android:inputType="text|date"/>
+
+        <ImageView
+            android:id="@+id/imgDatePicker"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignBottom="@+id/metTime"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/metTime"
+            android:layout_below="@+id/imgCity"
+            android:src="@drawable/ic_action_picker"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+
+            android:id="@+id/metDescription"
+            style="@style/MaterialEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/metTime"
+            android:layout_marginTop="16dp"
+            android:gravity="top"
+            android:hint="توضیحات بیشتر"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            app:met_maxCharacters="256"
+            android:maxLength="256"
+            android:maxLines="5"/>
+
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/metDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/btn_bg"
+            android:text="ثبت درخواست"
+            android:textColor="#ffffff"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

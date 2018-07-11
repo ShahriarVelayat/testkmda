@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/rlHeaderContainer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_close_48dp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/imgClose"
+            android:gravity="center"
+            android:text="امتیاز شما به حامد برای خرید آیتم ۱۱۲"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlHeaderContainer"
+        android:background="#f4f4f4"
+        android:gravity="right"
+        android:padding="16dp"
+        android:text="به هر کدوم از موارد سفارش ات چه امتیازی میدی؟"
+        android:textColor="#3b3a3a"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCaption"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#ffffff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sample_cover" />
+
+            <TextView
+                android:id="@+id/tvItemDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:gravity="center"
+                android:text="\n۲۵۰٫۰۰۰ تومان۲۳ شهریور ۱۳۹۷"
+                android:textSize="20sp"
+
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/llRatingContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvItem"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="کیفیت آیتم تحویلی"
+                android:textSize="16sp" />
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/ratingBarQuality"
+                style="@style/Widget.MaterialRatingBar.RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:isIndicator="false"
+                android:max="5"
+                android:maxHeight="32dp"
+                android:min="1"
+                android:minHeight="24dp"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/tvRateQuality"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/ratingBarQuality"
+                android:background="@drawable/bg_rounded_corner"
+                android:gravity="center"
+                android:text="۰"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="وضعیت بسته‌بندی"
+                android:textSize="16sp" />
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/ratingBarPack"
+                style="@style/Widget.MaterialRatingBar.RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:isIndicator="false"
+                android:max="5"
+                android:maxHeight="32dp"
+                android:minHeight="24dp"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/tvRatePack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/ratingBarPack"
+                android:background="@drawable/bg_rounded_corner"
+                android:gravity="center"
+                android:text="۰"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="کمداستانک"
+                android:textSize="16sp" />
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/ratingBarStory"
+                style="@style/Widget.MaterialRatingBar.RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:isIndicator="false"
+                android:max="5"
+                android:maxHeight="32dp"
+                android:minHeight="24dp"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/tvRateStory"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/ratingBarStory"
+                android:background="@drawable/bg_rounded_corner"
+                android:gravity="center"
+                android:text="۰"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/btnNotNow"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/llRatingContainer"
+        android:layout_marginTop="32dp"
+        android:background="@color/promoted_item"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="نظر نمیدم"
+        android:textColor="#ffffff"
+        app:rd_enable="true"
+        app:rd_rippleType="wave" />
+
+    <com.rey.material.widget.Button
+
+        android:id="@+id/btnRate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/llRatingContainer"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@id/btnNotNow"
+        android:background="@color/colorPrimary"
+        android:text="ثبت امتیاز"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:rd_enable="true"
+        app:rd_rippleType="wave" />
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/progress"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignBottom="@+id/btnRate"
+        android:layout_alignLeft="@+id/btnRate"
+        android:layout_alignTop="@+id/btnRate"
+        android:visibility="invisible"
+        app:pv_autostart="true"
+        app:pv_circular="true"
+        app:pv_progressMode="indeterminate"
+        app:pv_progressStyle="@style/DarkCircularProgressDrawable" />
+</RelativeLayout>

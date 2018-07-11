@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.komodaa.app.activities.SubmitPaymentReceipt">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/metPrice"
+        style="@style/MaterialEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:hint=""
+        android:inputType="textEmailAddress"
+        app:met_helperText=" "
+        app:met_iconRight="@drawable/ic_local_offer_black_24dp"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/metBank"
+        style="@style/MaterialEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="نام بانک"
+        android:inputType="textPersonName"
+        app:met_helperText=" "
+        app:met_iconRight="@drawable/ic_account_balance_black_18dp"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/metReceiptNo"
+        style="@style/MaterialEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="شماره رسید"
+        android:inputType="textPersonName"
+        app:met_helperText=" "
+        app:met_iconRight="@drawable/ic_receipt_black_18dp"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/metAddress"
+        style="@style/MaterialEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="آیتم به چه آدرسی ارسال شه؟"
+        android:maxLines="3"
+        android:lines="3"
+        android:inputType="textMultiLine"
+        app:met_helperText=" "
+        app:met_iconRight="@drawable/ic_place_black_24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btnHelp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPolicy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:background="#d2d2d2"
+            android:text="راهنما"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"/>
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPolicy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:background="@color/btn_bg"
+            android:text="ثبت"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:rd_enable="true"
+            app:rd_rippleType="wave"/>
+    </LinearLayout>
+</LinearLayout>

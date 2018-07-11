@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    tools:context="com.komodaa.app.activities.PurchaseActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btnHelp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:background="#ff9800"
+            android:text="آموزش خرید از کمدا"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            app:rd_enable="true"
+            app:rd_rippleType="wave" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvShipmentWay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="شیوه‌ی ارسال سفارش:"
+                    android:textSize="18sp" />
+
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvShipmentWay"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#d2d2d2" />
+
+                <RelativeLayout
+                    android:id="@+id/rlMigMigMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/tvMigMigiTitle"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/rbMigMigi"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/rbMigMigi"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/rbMigMigi"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/migmigi"
+                        android:gravity="center_vertical"
+                        android:text="میگ میگی"
+                        android:textSize="18sp" />
+
+                    <com.rey.material.widget.RadioButton
+                        android:id="@+id/rbMigMigi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:text="" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tvMigMigiTitle"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/rbMigMigi"
+                        android:gravity="center_vertical"
+                        android:text="هولی؟ عجولی؟ اورژانسیه؟ سفارش ات رو حداکثر تا 48 ساعت به دست ات می رسونیم."
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvShipmentWay"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#d2d2d2" />
+
+                <RelativeLayout
+                    android:id="@+id/rlSnailMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/tvSnailTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/rbSnail"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/rbSnail"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/rbSnail"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/halazooni"
+                        android:gravity="center_vertical"
+                        android:text="حلزونی"
+                        android:textSize="18sp" />
+
+                    <com.rey.material.widget.RadioButton
+                        android:id="@+id/rbSnail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:text="" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tvSnailTitle"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/rbSnail"
+                        android:gravity="center_vertical"
+                        android:text="همین الانِ الان خریدت رو لازم نداری؟ از نوادگانِ ایوب هستی؟ سفارش ها هفته ای یک بار و توسط کُمُخلبان ها به دستت می رسه." />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="آدرس"
+                    android:textSize="18sp" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/metAddress"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAddress"
+                    android:ems="10"
+                    android:gravity="top|right"
+                    android:hint="آیتم به چه آدرسی ارسال شه؟"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="3"
+                    app:met_helperText=" "
+                    app:met_iconRight="@drawable/ic_place_black_24dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvPriceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="قیمت آیتم" />
+
+                <TextView
+                    android:id="@+id/tvProductprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvPriceTitle"
+                    android:layout_marginTop="16dp"
+                    android:text="هزینه ارسال" />
+
+                <TextView
+                    android:id="@+id/tvShipmentPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tvPriceTitle"
+                    android:layout_marginTop="16dp"
+                    android:text="" />
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvShipmentPrice"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#d2d2d2" />
+
+                <TextView
+                    android:id="@+id/tvSum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/separator"
+                    android:gravity="center"
+                    android:text="جمع فاکتور:" />
+
+                <ImageView
+                    android:id="@+id/ivBadge"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tvSum"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/zarin_badge" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tvSum"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/ivBadge"
+                    android:text="راستی پول پرداختی ات پیش کُمُدا محفوظه و در صورت بروز هر مشکلی، قابل استرداده. اگه آیتم به هر دلیلی به دستت نرسه، پول ات رو پس میدیم. اگه توضیحات آیتم با واقعیت یکی نباشه هم آیتم ات رو مرجوع می کنیم."
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/btn_bg"
+            android:text="ثبت سفارش"
+            android:textColor="#ffffff"
+            app:rd_enable="true"
+            app:rd_rippleType="wave" />
+    </LinearLayout>
+</ScrollView>

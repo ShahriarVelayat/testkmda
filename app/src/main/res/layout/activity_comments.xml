@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.komodaa.app.activities.CommentsActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rlSend"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rlSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+
+        <com.rey.material.widget.ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#790099"
+            android:src="@drawable/btn_send"
+            app:rd_enable="true"
+            app:rd_rippleType="wave" />
+
+        <EditText
+
+            android:id="@+id/etComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@id/btnSend"
+            android:background="@android:color/transparent"
+            android:hint="پیامت رو بنویس..."
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:minHeight="44dp"
+            android:minLines="1"
+            android:paddingLeft="8dp"
+            android:textColorHint="#8e8d8d" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlReplyTo"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_above="@id/rlSend"
+        android:background="#a402cf"
+        android:paddingRight="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvReplyTo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="در پاسخ به حامد"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imgReplyClose"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_close_circle" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b6ffffff"
+        android:visibility="gone">
+
+        <com.rey.material.widget.ProgressView
+            android:id="@+id/progress"
+            android:visibility="invisible"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            app:pv_autostart="true"
+            app:pv_circular="true"
+            app:pv_progressMode="indeterminate"
+            />
+    </RelativeLayout>
+</RelativeLayout>

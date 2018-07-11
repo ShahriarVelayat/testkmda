@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgProductImage"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/tvNewStatus"
+        android:layout_width="92dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:background="#f7a85a"
+        android:gravity="center"
+        android:text="کاملاً نو"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvDiscount"
+        android:layout_width="92dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"
+        android:background="#e51c23"
+        android:gravity="center"
+        android:text="62%\nOff"
+        android:fontFamily="helvetica"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvFeatured"
+        android:layout_width="92dp"
+        android:layout_height="32dp"
+        android:layout_above="@+id/rlProductBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/promoted_item"
+        android:gravity="center"
+        android:text="آیتم ویژه"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rlProductBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/imgProductImage"
+        android:background="#737373">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/imgPurchase"
+            android:gravity="center"
+            android:text="خرید"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/imgPurchase"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_shopping_cart_black_24dp"/>
+
+        <TextView
+            android:id="@+id/tvComments"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/ic_forum_black_18dp"
+            android:gravity="center"
+            android:text="۱۴"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/tvComments"
+            android:background="#5f5f5f"/>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/separator"
+            android:gravity="center"
+            android:text="۱۳۰٫۰۰۰ تومان"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <com.rey.material.widget.FloatingActionButton
+        android:id="@+id/fabPurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rlProductBar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="24dp"
+        android:clickable="false"
+        android:visibility="invisible"
+        app:fab_backgroundColor="@color/colorPrimary"
+        app:fab_iconSrc="@drawable/ic_shopping_cart_black_24dp"/>
+</RelativeLayout>

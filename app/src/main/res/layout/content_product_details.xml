@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/cbBookmark"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/tvDate"
+            android:layout_marginTop="4dp"
+            android:button="@drawable/bookmark" />
+
+        <RelativeLayout
+            android:id="@+id/rlUserInfoWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_toRightOf="@id/cbBookmark">
+
+            <com.pkmmte.view.CircularImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                app:border="true"
+                app:border_color="#EEEEEE"
+                app:border_width="1dp"
+                app:shadow="true"
+                app:srcCompat="@drawable/ic_account_circle_48px" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgAvatar"
+                android:layout_alignTop="@+id/imgAvatar"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/imgAvatar"
+                android:gravity="right|center_vertical"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imgVerified"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignBottom="@id/tvUserName"
+                android:layout_alignTop="@id/tvUserName"
+                android:layout_below="@+id/imgAvatar"
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@id/tvUserName"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/verified_user"
+                android:tint="#000000"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvSpecs"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:background="#d2d2d2"
+        android:gravity="center_vertical|right"
+        android:paddingRight="16dp"
+        android:text="مشخصات"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/llAttributesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:showDividers="beginning|end|middle">
+
+    </LinearLayout>
+
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/tabLayout"-->
+    <!--style="@style/AppTabLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="24dp"-->
+    <!--android:background="#d2d2d2"/>-->
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/vpComments"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="250dp"-->
+    <!--android:clickable="false"-->
+    <!--android:descendantFocusability="blocksDescendants"/>-->
+
+    <TextView
+        android:id="@+id/tvUsersComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="نظرات کاربران"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvMoreComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="دیدن سایر نظرات"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone" />
+
+    <com.rey.material.widget.Button
+        android:id="@+id/btnComments"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#795696"
+        android:text="درج نظر"
+        android:textColor="#ffffff"
+        app:rd_enable="true"
+        app:rd_rippleType="wave" />
+
+    <LinearLayout
+        android:id="@+id/llMoreProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="سایر آیتم های این فروشنده"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recMoreProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

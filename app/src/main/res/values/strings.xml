@@ -1,0 +1,1278 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">کمدا</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="crop__saving">در حال ذخیره سازی</string>
+    <string name="crop__wait">لطفاً صبر کنید ...</string>
+    <string name="crop__pick_error">تصویری در دسترس نیست</string>
+
+    <string name="crop__done">تأیید</string>
+    <string name="crop__cancel" tools:ignore="ButtonCase">انصراف</string>
+    <!--<string name="slide_string_2">پیداشون کن. بیارشون بیرون !\n۵۰ تا ۷۰ درصد خرید اصلی روشون قیمت بزار.</string>-->
+    <string name="taptarget.menu.messages.text">اگه کسی برات نظر یا سوالی ارسال کنه، از اینجا با خبر میشی</string>
+    <string name="taptarget.view.fab.options"> چیزی برای فروش داری؟ توی کمدت چیزی کم داری که می خوای بقیه برات بفرستن؟ از این دکمه استفاده کن.</string>
+    <string name="taptarget.menu.toggle.title">این منوی اصلی کمداست!</string>
+    <string name="taptarget.menu.toggle.text">مدیریت آیتم ها، درخواست ها و با خبر شدن از رویدادهای کمدا جاش اینجاست.</string>
+    <string name="achievement.unread_messages.title">پیام جدید</string>
+    <string name="achievement.unread.messages.text">شما %d پیام خوانده نشده دارید.</string>
+    <string name="dialog_search_no_content">متاسفانه هیچ موردی که مناسب این درخواست باشه، نداری!</string>
+    <string name="loadin_please_wait">لطفا منتظر باش...</string>
+    <string name="taptarget_toolbar_item_search">اگر می‌خوای فقط آیتم های یه شهر و دسته ی خاصی رو ببینی روی این آیکن بزن</string>
+    <string name="my_closet">کمدِ من</string>
+    <string name="top_sellers">خوش خرید/فروش ها</string>
+    <string name="financial_report">گزارش مالی</string>
+    <string name="request_item">درخواست آیتم</string>
+    <string name="radiomoda">رادیومُدا</string>
+    <string name="contact_us">تماس با ما</string>
+    <string name="about">درباره کمدا</string>
+    <array name="cities">
+        <item>آب بر</item>
+        <item>آباد</item>
+        <item>آبادان</item>
+        <item>آباده</item>
+        <item>آباده طشک</item>
+        <item>آبپخش</item>
+        <item>آبدان</item>
+        <item>آبدانان</item>
+        <item>آبژدان</item>
+        <item>آبسرد</item>
+        <item>آبش احمد</item>
+        <item>آبعلی</item>
+        <item>آبگرم</item>
+        <item>آبی بیگلو</item>
+        <item>آبیک</item>
+        <item>آجین</item>
+        <item>آچاچی</item>
+        <item>آذرشهر</item>
+        <item>آرادان</item>
+        <item>آران و بیدگل</item>
+        <item>آرمرده</item>
+        <item>آرین شهر</item>
+        <item>آزاد شهر</item>
+        <item>آزادی</item>
+        <item>آسارا</item>
+        <item>آستارا</item>
+        <item>آستانه</item>
+        <item>آستانه اشرفیه</item>
+        <item>آسمان آباد</item>
+        <item>آشتیان</item>
+        <item>آشخانه</item>
+        <item>آغاجاری</item>
+        <item>آق قلا</item>
+        <item>آقکند</item>
+        <item>آلاشت</item>
+        <item>آلونی</item>
+        <item>آمل</item>
+        <item>آوا</item>
+        <item>آواجیق</item>
+        <item>آوج</item>
+        <item>آوه</item>
+        <item>آیسک</item>
+        <item>ابرکوه</item>
+        <item>ابریشم</item>
+        <item>ابوحمیظه</item>
+        <item>ابوزید آباد</item>
+        <item>ابوموسی</item>
+        <item>ابهر</item>
+        <item>احمد آباد</item>
+        <item>احمد سرگوراب</item>
+        <item>احمدآباد صولت</item>
+        <item>اختیار آباد</item>
+        <item>ادیمی</item>
+        <item>اراک</item>
+        <item>ارجمند</item>
+        <item>ارداق</item>
+        <item>اردبیل</item>
+        <item>اردستان</item>
+        <item>اردکان</item>
+        <item>اردکان</item>
+        <item>اردل</item>
+        <item>ارزوئیه</item>
+        <item>ارسک</item>
+        <item>ارسنجان</item>
+        <item>ارطه</item>
+        <item>ارکواز</item>
+        <item>ارمخانخانه</item>
+        <item>ارومیه</item>
+        <item>اروند کنار</item>
+        <item>ازگله</item>
+        <item>ازنا</item>
+        <item>ازندریان</item>
+        <item>اژیه</item>
+        <item>اسالم</item>
+        <item>اسپکه</item>
+        <item>استهبان</item>
+        <item>اسد آباد</item>
+        <item>اسدیه</item>
+        <item>اسفدن</item>
+        <item>اسفراین</item>
+        <item>اسفرورین</item>
+        <item>اسکو</item>
+        <item>اسلام آباد</item>
+        <item>اسلام آباد غرب</item>
+        <item>اسلامشهر</item>
+        <item>اسلامیه</item>
+        <item>اسیر</item>
+        <item>اشترینان</item>
+        <item>اشتهارد</item>
+        <item>اشکذر</item>
+        <item>اشکنان</item>
+        <item>اشنویه</item>
+        <item>اصغرآباد</item>
+        <item>اصفهان</item>
+        <item>اصلاندوز</item>
+        <item>اطاقور</item>
+        <item>افزر</item>
+        <item>افوس</item>
+        <item>اقبالیه</item>
+        <item>اقلید</item>
+        <item>الشتر</item>
+        <item>الوان</item>
+        <item>الوند</item>
+        <item>الهایی</item>
+        <item>الیگودرز</item>
+        <item>امام حسن</item>
+        <item>امام شهر</item>
+        <item>امامزاده عبدالله</item>
+        <item>املش</item>
+        <item>امیدیه</item>
+        <item>امیر کلا</item>
+        <item>امیریه</item>
+        <item>امین شهر</item>
+        <item>انابد</item>
+        <item>انار</item>
+        <item>انارستان</item>
+        <item>انارک</item>
+        <item>انبار آلوم</item>
+        <item>اندوهجرد</item>
+        <item>اندیشه</item>
+        <item>اندیمشک</item>
+        <item>اورامان تخت</item>
+        <item>اوز</item>
+        <item>اهر</item>
+        <item>اهرم</item>
+        <item>اهل</item>
+        <item>اهواز</item>
+        <item>ایج</item>
+        <item>ایذه</item>
+        <item>ایرانشهر</item>
+        <item>ایزد خواست</item>
+        <item>ایزد شهر</item>
+        <item>ایلام</item>
+        <item>ایلخچی</item>
+        <item>ایمانشهر</item>
+        <item>اینچه برون</item>
+        <item>ایوان</item>
+        <item>ایوانکی</item>
+        <item>ایواوغلی</item>
+        <item>ایور</item>
+        <item>باب انار</item>
+        <item>باباحیدر</item>
+        <item>بابارشانی</item>
+        <item>بابامنیر</item>
+        <item>بابل</item>
+        <item>بابلسر</item>
+        <item>باجگیران</item>
+        <item>باخرز</item>
+        <item>بادرود</item>
+        <item>بادوله</item>
+        <item>بار</item>
+        <item>باروق</item>
+        <item>بازار جمعه</item>
+        <item>بازرگان</item>
+        <item>بازفت</item>
+        <item>باسمنج</item>
+        <item>باشت</item>
+        <item>باغ بهادران</item>
+        <item>باغ ملک</item>
+        <item>باغستان</item>
+        <item>باغشاد</item>
+        <item>باغین</item>
+        <item>بافت</item>
+        <item>بافران</item>
+        <item>بافق</item>
+        <item>باقرشهر</item>
+        <item>بالاده</item>
+        <item>بانوره</item>
+        <item>بانه</item>
+        <item>بایک</item>
+        <item>باینگان</item>
+        <item>بجستان</item>
+        <item>بجنورد</item>
+        <item>بخشایش</item>
+        <item>بدره</item>
+        <item>برازجان</item>
+        <item>بردخون</item>
+        <item>بردستان</item>
+        <item>بردسکن</item>
+        <item>بردسیر</item>
+        <item>برده رشه</item>
+        <item>برزک</item>
+        <item>برزول</item>
+        <item>برف انبار</item>
+        <item>بروات</item>
+        <item>بروجرد</item>
+        <item>بروجن</item>
+        <item>بره سر</item>
+        <item>بزمان</item>
+        <item>بزنجان</item>
+        <item>بستان</item>
+        <item>بستان آباد</item>
+        <item>بستک</item>
+        <item>بسطام</item>
+        <item>بشرویه</item>
+        <item>بفروئیه</item>
+        <item>بلاوه</item>
+        <item>بلبان آباد</item>
+        <item>بلداجی</item>
+        <item>بلده</item>
+        <item>بلورد</item>
+        <item>بلوک</item>
+        <item>بم</item>
+        <item>بمپور</item>
+        <item>بن</item>
+        <item>بناب</item>
+        <item>بناب مرند</item>
+        <item>بنارویه</item>
+        <item>بنت</item>
+        <item>بنجار</item>
+        <item>بندر امام خمینی</item>
+        <item>بندر انزلی</item>
+        <item>بندر ترکمن</item>
+        <item>بندر جاسک</item>
+        <item>بندر دیر</item>
+        <item>بندر دیلم</item>
+        <item>بندر ریگ</item>
+        <item>بندر عباس</item>
+        <item>بندر کنگان</item>
+        <item>بندر گز</item>
+        <item>بندر گناوه</item>
+        <item>بندر لنگه</item>
+        <item>بندر ماهشهر</item>
+        <item>بنک</item>
+        <item>بوانات</item>
+        <item>بوشکان</item>
+        <item>بوشهر</item>
+        <item>بوکان</item>
+        <item>بومهن</item>
+        <item>بوئین زهرا</item>
+        <item>بوئین سفلی</item>
+        <item>بوئین میاندشت</item>
+        <item>بهاباد</item>
+        <item>بهار</item>
+        <item>بهاران شهر</item>
+        <item>بهارستان</item>
+        <item>بهبهان</item>
+        <item>بهرمان</item>
+        <item>بهشهر</item>
+        <item>بهمن</item>
+        <item>بهنمیر</item>
+        <item>بیارجمند</item>
+        <item>بیجار</item>
+        <item>بیدخت</item>
+        <item>بیدروبه</item>
+        <item>بیدستان</item>
+        <item>بیرانشهر</item>
+        <item>بیرجند</item>
+        <item>بیرم</item>
+        <item>بیستون</item>
+        <item>بیضا</item>
+        <item>بیکاه</item>
+        <item>بیله سوار</item>
+        <item>پاتاوه</item>
+        <item>پارس آباد</item>
+        <item>پارسیان</item>
+        <item>پاریز</item>
+        <item>پاکدشت</item>
+        <item>پاوه</item>
+        <item>پایین هولار</item>
+        <item>پردنجان</item>
+        <item>پردیس</item>
+        <item>پرندک</item>
+        <item>پره سر</item>
+        <item>پل سفید</item>
+        <item>پلدختر</item>
+        <item>پلدشت</item>
+        <item>پول</item>
+        <item>پهله</item>
+        <item>پیر بکران</item>
+        <item>پیرانشهر</item>
+        <item>پیرتاج</item>
+        <item>پیش قلعه</item>
+        <item>پیشوا</item>
+        <item>پیشین</item>
+        <item>تاتار علیا</item>
+        <item>تازه آباد</item>
+        <item>تازه شهر</item>
+        <item>تازه کند</item>
+        <item>تازه کند انگوت</item>
+        <item>تازیان پائین</item>
+        <item>تاکستان</item>
+        <item>تایباد</item>
+        <item>تبریز</item>
+        <item>تجریش</item>
+        <item>تخت</item>
+        <item>تربت جام</item>
+        <item>تربت حیدریه</item>
+        <item>ترکالکی</item>
+        <item>ترک</item>
+        <item>ترکمانچای</item>
+        <item>تسوج</item>
+        <item>تشان</item>
+        <item>تفت</item>
+        <item>تفرش</item>
+        <item>تکاب</item>
+        <item>تنکابن</item>
+        <item>تنکمان</item>
+        <item>تنگ ارم</item>
+        <item>توپ آغاج</item>
+        <item>توتکابن</item>
+        <item>توحید</item>
+        <item>تودشک</item>
+        <item>توره</item>
+        <item>تویسرکان</item>
+        <item>تهران</item>
+        <item>تیتکانلو</item>
+        <item>تیران</item>
+        <item>تیرور</item>
+        <item>تیکمه داش</item>
+        <item>تیمورلو</item>
+        <item>جاجرم</item>
+        <item>جالق</item>
+        <item>جاورسیان</item>
+        <item>جایزان</item>
+        <item>جبالبارز</item>
+        <item>جعفر آباد</item>
+        <item>جعفریه</item>
+        <item>جغتای</item>
+        <item>جلفا</item>
+        <item>جلین</item>
+        <item>جم</item>
+        <item>جناح</item>
+        <item>جنت شهر</item>
+        <item>جنت مکان</item>
+        <item>جندق</item>
+        <item>جنگل</item>
+        <item>جواد آباد</item>
+        <item>جوان قلعه</item>
+        <item>جوانرود</item>
+        <item>جوپار</item>
+        <item>جورقان</item>
+        <item>جوزدان</item>
+        <item>جوزم</item>
+        <item>جوشقان قالی</item>
+        <item>جوکار</item>
+        <item>جونقان</item>
+        <item>جویبار</item>
+        <item>جویم</item>
+        <item>جهرم</item>
+        <item>جیرفت</item>
+        <item>جیرنده</item>
+        <item>چابکسر</item>
+        <item>چاپشلو</item>
+        <item>چادگان</item>
+        <item>چارک</item>
+        <item>چاف و چمخاله</item>
+        <item>چالانچولان</item>
+        <item>چالوس</item>
+        <item>چاه بهار</item>
+        <item>چترود</item>
+        <item>چرام</item>
+        <item>چرمهین</item>
+        <item>چغادک</item>
+        <item>چغامیش</item>
+        <item>چقابل</item>
+        <item>چکنه</item>
+        <item>چلگرد</item>
+        <item>چلیچه</item>
+        <item>چم گلک</item>
+        <item>چمران</item>
+        <item>چمستان</item>
+        <item>چمگردان</item>
+        <item>چناران</item>
+        <item>چناران شهر</item>
+        <item>چناره</item>
+        <item>چوار</item>
+        <item>چوبر</item>
+        <item>چورزق</item>
+        <item>چوئبده</item>
+        <item>چهار برج</item>
+        <item>چهارباغ</item>
+        <item>چهاردانگه</item>
+        <item>چیتاب</item>
+        <item>حاجی آباد</item>
+        <item>حاجی آباد</item>
+        <item>حاجی آباد</item>
+        <item>حبیب آباد</item>
+        <item>حر</item>
+        <item>حسامی</item>
+        <item>حسن آباد</item>
+        <item>حسن آباد</item>
+        <item>حسن آباد</item>
+        <item>حسینیه</item>
+        <item>حصارگرمخان</item>
+        <item>حلب</item>
+        <item>حمزه</item>
+        <item>حمیدیا</item>
+        <item>حمیدیه</item>
+        <item>حمیل</item>
+        <item>حنا</item>
+        <item>حویق</item>
+        <item>خاتون آباد</item>
+        <item>خارک</item>
+        <item>خاروانا</item>
+        <item>خاش</item>
+        <item>خاکعلی</item>
+        <item>خالد آباد</item>
+        <item>خامنه</item>
+        <item>خان ببین</item>
+        <item>خانوک</item>
+        <item>خانه زنیان</item>
+        <item>خانیمن</item>
+        <item>خاوران</item>
+        <item>خداجو</item>
+        <item>خرامه</item>
+        <item>خرم آباد</item>
+        <item>خرم آباد</item>
+        <item>خرمدره</item>
+        <item>خرمدشت</item>
+        <item>خرمشهر</item>
+        <item>خرو</item>
+        <item>خسروشاه</item>
+        <item>خشت</item>
+        <item>خشکرود</item>
+        <item>خشکبیجار</item>
+        <item>خضر آباد</item>
+        <item>خضری دشت بیاض</item>
+        <item>خلخال</item>
+        <item>خلیفان</item>
+        <item>خلیل آباد</item>
+        <item>خلیل شهر</item>
+        <item>خمارلو</item>
+        <item>خمام</item>
+        <item>خمیر</item>
+        <item>خمین</item>
+        <item>خمینی شهر</item>
+        <item>خنافره</item>
+        <item>خنج</item>
+        <item>خنجین</item>
+        <item>خنداب</item>
+        <item>خواجوشهر</item>
+        <item>خواجه</item>
+        <item>خواف</item>
+        <item>خوانسار</item>
+        <item>خور</item>
+        <item>خور</item>
+        <item>خورزوق</item>
+        <item>خورسند</item>
+        <item>خورموج</item>
+        <item>خوزی</item>
+        <item>خوسف</item>
+        <item>خوش رودپی</item>
+        <item>خومه زار</item>
+        <item>خوی</item>
+        <item>دابودشت</item>
+        <item>داراب</item>
+        <item>داران</item>
+        <item>دارخوین</item>
+        <item>داریان</item>
+        <item>دالکی</item>
+        <item>دامغان</item>
+        <item>دامنه</item>
+        <item>دانسفهان</item>
+        <item>داود آباد</item>
+        <item>داورزن</item>
+        <item>دبیران</item>
+        <item>درب بهشت</item>
+        <item>درب گنبد</item>
+        <item>درجزین</item>
+        <item>درچه پیاز</item>
+        <item>درق</item>
+        <item>درگز</item>
+        <item>درگهان</item>
+        <item>درود</item>
+        <item>دره شهر</item>
+        <item>دزج</item>
+        <item>دزفول</item>
+        <item>دژکرد</item>
+        <item>دستجرد</item>
+        <item>دستگرد</item>
+        <item>دستناء</item>
+        <item>دشتک</item>
+        <item>دشتکار</item>
+        <item>دشتی</item>
+        <item>دلبران</item>
+        <item>دلگشا</item>
+        <item>دلند</item>
+        <item>دلوار</item>
+        <item>دلیجان</item>
+        <item>دماوند</item>
+        <item>دمق</item>
+        <item>دندی</item>
+        <item>دوبرجی</item>
+        <item>دوراهک</item>
+        <item>دورود</item>
+        <item>دوزدوزان</item>
+        <item>دوزه</item>
+        <item>دوساری</item>
+        <item>دوست محمد</item>
+        <item>دوگنبدان</item>
+        <item>دولت آباد</item>
+        <item>دولت آباد</item>
+        <item>دهاقان</item>
+        <item>دهبارز</item>
+        <item>دهج</item>
+        <item>دهدز</item>
+        <item>دهدشت</item>
+        <item>دهرم</item>
+        <item>دهق</item>
+        <item>دهگلان</item>
+        <item>دهلران</item>
+        <item>دیباج</item>
+        <item>دیزج دیز</item>
+        <item>دیزیچه</item>
+        <item>دیشموک</item>
+        <item>دیلمان</item>
+        <item>دیواندره</item>
+        <item>دیهوک</item>
+        <item>رابر</item>
+        <item>راز</item>
+        <item>رازقان</item>
+        <item>رازمیان</item>
+        <item>راسک</item>
+        <item>رامجرد</item>
+        <item>رامسر</item>
+        <item>رامشیر</item>
+        <item>رامهرمز</item>
+        <item>رامیان</item>
+        <item>رانکوه</item>
+        <item>راور</item>
+        <item>راین</item>
+        <item>رباط</item>
+        <item>رباط سنگ</item>
+        <item>رباط کریم</item>
+        <item>ربط</item>
+        <item>رحیم آباد</item>
+        <item>رزن</item>
+        <item>رزوه</item>
+        <item>رستم آباد</item>
+        <item>رستمکلا</item>
+        <item>رشت</item>
+        <item>رشتخوار</item>
+        <item>رضوانشهر</item>
+        <item>رضوانشهر</item>
+        <item>رضویه</item>
+        <item>رضی</item>
+        <item>رفسنجان</item>
+        <item>رفیع</item>
+        <item>روانسر</item>
+        <item>روداب</item>
+        <item>رودبار</item>
+        <item>رودبار</item>
+        <item>رودبنه</item>
+        <item>رودسر</item>
+        <item>رودهن</item>
+        <item>رودیان</item>
+        <item>رونیز</item>
+        <item>رویان</item>
+        <item>رویدر</item>
+        <item>ری</item>
+        <item>ریجاب</item>
+        <item>ریحان</item>
+        <item>ریز</item>
+        <item>رینه</item>
+        <item>ریوش</item>
+        <item>زابل</item>
+        <item>زارچ</item>
+        <item>زازران</item>
+        <item>زاغه</item>
+        <item>زاویه</item>
+        <item>زاهد شهر</item>
+        <item>زاهدان</item>
+        <item>زاینده رود</item>
+        <item>زرآباد</item>
+        <item>زرآباد</item>
+        <item>زرقان</item>
+        <item>زرگر محله</item>
+        <item>زرند</item>
+        <item>زرنق</item>
+        <item>زرنه</item>
+        <item>زرین آباد</item>
+        <item>زرین رود</item>
+        <item>زرین شهر</item>
+        <item>زرینه</item>
+        <item>زنجان</item>
+        <item>زنگنه</item>
+        <item>زنگی آباد</item>
+        <item>زنوز</item>
+        <item>زواره</item>
+        <item>زهان</item>
+        <item>زهره</item>
+        <item>زهک</item>
+        <item>زهکلوت</item>
+        <item>زیار</item>
+        <item>زیارت</item>
+        <item>زیارتعلی</item>
+        <item>زیباشهر</item>
+        <item>زید آباد</item>
+        <item>زیرآب</item>
+        <item>ساروق</item>
+        <item>ساری</item>
+        <item>سالند</item>
+        <item>سامان</item>
+        <item>سامن</item>
+        <item>ساوه</item>
+        <item>سبزوار</item>
+        <item>سپید دشت</item>
+        <item>سجاس</item>
+        <item>سده</item>
+        <item>سده لنجان</item>
+        <item>سر پل ذهاب</item>
+        <item>سراب</item>
+        <item>سراب باغ</item>
+        <item>سراب دوره</item>
+        <item>سرابله</item>
+        <item>سراوان</item>
+        <item>سرایان</item>
+        <item>سرباز</item>
+        <item>سربیشه</item>
+        <item>سرخرود</item>
+        <item>سرخس</item>
+        <item>سرخنکلاته</item>
+        <item>سرخون</item>
+        <item>سرخه</item>
+        <item>سرداران</item>
+        <item>سردرود</item>
+        <item>سردشت</item>
+        <item>سردشت</item>
+        <item>سردشت</item>
+        <item>سردشت لردگان</item>
+        <item>سرعین</item>
+        <item>سرفاریاب</item>
+        <item>سرکان</item>
+        <item>سرگز</item>
+        <item>سرمست</item>
+        <item>سرو</item>
+        <item>سرو آباد</item>
+        <item>سروستان</item>
+        <item>سریش آباد</item>
+        <item>سطر</item>
+        <item>سعادت شهر</item>
+        <item>سعد آباد</item>
+        <item>سفید دشت</item>
+        <item>سفید سنگ</item>
+        <item>سفید شهر</item>
+        <item>سقز</item>
+        <item>سگز آباد</item>
+        <item>سگزی</item>
+        <item>سلامی</item>
+        <item>سلطان آباد</item>
+        <item>سلطان شهر</item>
+        <item>سلطانیه</item>
+        <item>سلفچگان</item>
+        <item>سلماس</item>
+        <item>سلمان شهر</item>
+        <item>سماله</item>
+        <item>سمنان</item>
+        <item>سمیرم</item>
+        <item>سنخواست</item>
+        <item>سندرک</item>
+        <item>سنقر</item>
+        <item>سنگان</item>
+        <item>سنگدوین</item>
+        <item>سنگر</item>
+        <item>سنندج</item>
+        <item>سودجان</item>
+        <item>سوران</item>
+        <item>سورشجان</item>
+        <item>سورک</item>
+        <item>سورمق</item>
+        <item>سوزا</item>
+        <item>سوسنگرد</item>
+        <item>سوق</item>
+        <item>سومار</item>
+        <item>سه قلعه</item>
+        <item>سهرورد</item>
+        <item>سی سخت</item>
+        <item>سیاه منصور</item>
+        <item>سیاهکل</item>
+        <item>سیدان</item>
+        <item>سیراف</item>
+        <item>سیرجان</item>
+        <item>سیردان</item>
+        <item>سیرکان</item>
+        <item>سیریک</item>
+        <item>سیس</item>
+        <item>سیلوانه</item>
+        <item>سیمین شهر</item>
+        <item>سیمینه</item>
+        <item>سین</item>
+        <item>سیه چشمه</item>
+        <item>سیه رود</item>
+        <item>شاپورآباد</item>
+        <item>شادگان</item>
+        <item>شادمهر</item>
+        <item>شازند</item>
+        <item>شال</item>
+        <item>شاندیز</item>
+        <item>شاوور</item>
+        <item>شاهدشهر</item>
+        <item>شاهدیه</item>
+        <item>شاهرود</item>
+        <item>شاهو</item>
+        <item>شاهین دژ</item>
+        <item>شاهین شهر</item>
+        <item>شباب</item>
+        <item>شبانکاره</item>
+        <item>شبستر</item>
+        <item>شرافت</item>
+        <item>شربیان</item>
+        <item>شرفخانه</item>
+        <item>شریف آباد</item>
+        <item>شریفیه</item>
+        <item>ششتمد</item>
+        <item>ششده</item>
+        <item>شفت</item>
+        <item>شلمان</item>
+        <item>شلمزار</item>
+        <item>شمس آباد</item>
+        <item>شمشک</item>
+        <item>شنبه</item>
+        <item>شند آباد</item>
+        <item>شوسف</item>
+        <item>شوش</item>
+        <item>شوشتر</item>
+        <item>شوط</item>
+        <item>شوقان</item>
+        <item>شول آباد</item>
+        <item>شویشه</item>
+        <item>شهباز</item>
+        <item>شهداد</item>
+        <item>شهر امام</item>
+        <item>شهر بابک</item>
+        <item>شهر پیر</item>
+        <item>شهر جدید پرند</item>
+        <item>شهر جدید سهند</item>
+        <item>شهر جدید صدرا</item>
+        <item>شهر جدید مهاجران</item>
+        <item>شهر جدید هشتگرد</item>
+        <item>شهر زو</item>
+        <item>شهرآباد</item>
+        <item>شهرضا</item>
+        <item>شهرکرد</item>
+        <item>شهریار</item>
+        <item>شهمیرزاد</item>
+        <item>شیبان</item>
+        <item>شیراز</item>
+        <item>شیرگاه</item>
+        <item>شیروان</item>
+        <item>شیرود</item>
+        <item>شیرین سو</item>
+        <item>صاحب</item>
+        <item>صالح آباد</item>
+        <item>صالح آباد</item>
+        <item>صالح آباد</item>
+        <item>صالح شهر</item>
+        <item>صالحیه</item>
+        <item>صائین قلعه</item>
+        <item>صبا شهر</item>
+        <item>صحنه</item>
+        <item>صغاد</item>
+        <item>صفا شهر</item>
+        <item>صفادشت</item>
+        <item>صفائیه</item>
+        <item>صفی آباد</item>
+        <item>صفی آباد</item>
+        <item>صمصامی</item>
+        <item>صوفیان</item>
+        <item>صومعه سرا</item>
+        <item>صیدون</item>
+        <item>ضیاء آباد</item>
+        <item>طاقانک</item>
+        <item>طالخونچه</item>
+        <item>طالقان</item>
+        <item>طبس</item>
+        <item>طبس مسینا</item>
+        <item>طرق رود</item>
+        <item>طرقبه</item>
+        <item>عباس آباد</item>
+        <item>عجب شیر</item>
+        <item>عسگران</item>
+        <item>عسلویه</item>
+        <item>عشق آباد</item>
+        <item>عشق آباد</item>
+        <item>عقدا</item>
+        <item>علامرودشت</item>
+        <item>علویچه</item>
+        <item>علی آباد</item>
+        <item>علی اکبر</item>
+        <item>عماد ده</item>
+        <item>عنبر آباد</item>
+        <item>عنبران</item>
+        <item>غرق آباد</item>
+        <item>فارسان</item>
+        <item>فارغان</item>
+        <item>فاروج</item>
+        <item>فاریاب</item>
+        <item>فاضل آباد</item>
+        <item>فامنین</item>
+        <item>فتح المبین</item>
+        <item>فخرآباد</item>
+        <item>فدامی</item>
+        <item>فرادنبه</item>
+        <item>فراشبند</item>
+        <item>فراغی</item>
+        <item>فرخ شهر</item>
+        <item>فرخی</item>
+        <item>فردوس</item>
+        <item>فردوسیه</item>
+        <item>فردیس</item>
+        <item>فرسفج</item>
+        <item>فرمهین</item>
+        <item>فرون آباد</item>
+        <item>فرهاد گرد</item>
+        <item>فریدونشهر</item>
+        <item>فریدونکنار</item>
+        <item>فریم</item>
+        <item>فریمان</item>
+        <item>فسا</item>
+        <item>فشم</item>
+        <item>فلاورجان</item>
+        <item>فنوج</item>
+        <item>فولاد شهر</item>
+        <item>فومن</item>
+        <item>فهرج</item>
+        <item>فیرورق</item>
+        <item>فیروزآباد</item>
+        <item>فیروزآباد</item>
+        <item>فیروزان</item>
+        <item>فیروزکوه</item>
+        <item>فیروزه</item>
+        <item>فیض آباد</item>
+        <item>فین</item>
+        <item>قادرآباد</item>
+        <item>قاسم آباد</item>
+        <item>قاضی</item>
+        <item>قائم شهر</item>
+        <item>قائمیه</item>
+        <item>قائن</item>
+        <item>قدس</item>
+        <item>قدمگاه</item>
+        <item>قرچک</item>
+        <item>قروه</item>
+        <item>قروه در جزین</item>
+        <item>قره آغاج</item>
+        <item>قره بلاغ</item>
+        <item>قره ضیاء الدین</item>
+        <item>قزوین</item>
+        <item>قشم</item>
+        <item>قصابه</item>
+        <item>قصر شیرین</item>
+        <item>قصر قند</item>
+        <item>قطب آباد</item>
+        <item>قطرویه</item>
+        <item>قطور</item>
+        <item>قلعه تل</item>
+        <item>قلعه خواجه</item>
+        <item>قلعه رئیسی</item>
+        <item>قلعه قاضی</item>
+        <item>قلعه گنج</item>
+        <item>قلندر آباد</item>
+        <item>قم</item>
+        <item>قمصر</item>
+        <item>قنوات</item>
+        <item>قوچان</item>
+        <item>قورچی باشی</item>
+        <item>قوشچی</item>
+        <item>قوشخانه</item>
+        <item>قهاوند</item>
+        <item>قهجاورستان</item>
+        <item>قهدریجان</item>
+        <item>قهستان</item>
+        <item>قیدار</item>
+        <item>قیر</item>
+        <item>کوشکنار</item>
+        <item>کاج</item>
+        <item>کاخک</item>
+        <item>کارچان</item>
+        <item>کارزین</item>
+        <item>کاریز</item>
+        <item>کازرون</item>
+        <item>کاشان</item>
+        <item>کاشمر</item>
+        <item>کاظم آباد</item>
+        <item>کاکی</item>
+        <item>کامفیروز</item>
+        <item>کامو و چوگان</item>
+        <item>کامیاران</item>
+        <item>کانی دینار</item>
+        <item>کانی سور</item>
+        <item>کبودر آهنگ</item>
+        <item>کتالم و سادات شهر</item>
+        <item>کجور</item>
+        <item>کدکن</item>
+        <item>کرج</item>
+        <item>کرد کوی</item>
+        <item>کرسف</item>
+        <item>کرکوند</item>
+        <item>کرمان</item>
+        <item>کرمانشاه</item>
+        <item>کرند غرب</item>
+        <item>کره ای</item>
+        <item>کشاورز</item>
+        <item>کشکسرای</item>
+        <item>کشکوئیه</item>
+        <item>کلات</item>
+        <item>کلاته</item>
+        <item>کلاته خیج</item>
+        <item>کلاچای</item>
+        <item>کلارآباد</item>
+        <item>کلاردشت</item>
+        <item>کلاله</item>
+        <item>کلمه</item>
+        <item>کلوانق</item>
+        <item>کلور</item>
+        <item>کلیبر</item>
+        <item>کلیشاد و سودرجان</item>
+        <item>کمال شهر</item>
+        <item>کمشجه</item>
+        <item>کمه</item>
+        <item>کمیجان</item>
+        <item>کنار تخته</item>
+        <item>کنارک</item>
+        <item>کندر</item>
+        <item>کنگ</item>
+        <item>کنگاور</item>
+        <item>کوار</item>
+        <item>کوپن</item>
+        <item>کوت سیدنعیم</item>
+        <item>کوت عبدالله</item>
+        <item>کوچصفهان</item>
+        <item>کوخردهرنگ</item>
+        <item>کورائیم</item>
+        <item>کوزران</item>
+        <item>کوزه کنان</item>
+        <item>کوشک</item>
+        <item>کومله</item>
+        <item>کوهبنان</item>
+        <item>کوهپایه</item>
+        <item>کوهدشت</item>
+        <item>کوهسار</item>
+        <item>کوهستک</item>
+        <item>کوهنانی</item>
+        <item>کوهنجان</item>
+        <item>کوهی خیل</item>
+        <item>کوهین</item>
+        <item>کهریزسنگ</item>
+        <item>کهریزک</item>
+        <item>کهک</item>
+        <item>کهن آباد</item>
+        <item>کهنوج</item>
+        <item>کیاسر</item>
+        <item>کیاشهر</item>
+        <item>کیاکلا</item>
+        <item>کیان</item>
+        <item>کیانشهر</item>
+        <item>کیش</item>
+        <item>کیلان</item>
+        <item>گالیکش</item>
+        <item>گتاب</item>
+        <item>گتوند</item>
+        <item>گراب</item>
+        <item>گراب سفلی</item>
+        <item>گراش</item>
+        <item>گردکشانه</item>
+        <item>گرگاب</item>
+        <item>گرگان</item>
+        <item>گرماب</item>
+        <item>گرمدره</item>
+        <item>گرمسار</item>
+        <item>گرمه</item>
+        <item>گرمی</item>
+        <item>گروک</item>
+        <item>گز برخوار</item>
+        <item>گزنک</item>
+        <item>گزیک</item>
+        <item>گشت</item>
+        <item>گل تپه</item>
+        <item>گلباف</item>
+        <item>گلپایگان</item>
+        <item>گلدشت</item>
+        <item>گلزار</item>
+        <item>گلسار</item>
+        <item>گلستان</item>
+        <item>گلشن</item>
+        <item>گلشهر</item>
+        <item>گلگیر</item>
+        <item>گلمکان</item>
+        <item>گلمورتی</item>
+        <item>گلوگاه</item>
+        <item>گلوگاه</item>
+        <item>گله دار</item>
+        <item>گمیش تپه</item>
+        <item>گناباد</item>
+        <item>گنبدکاووس</item>
+        <item>گنبکی</item>
+        <item>گندمان</item>
+        <item>گوجان</item>
+        <item>گودین</item>
+        <item>گوراب زرمیخ</item>
+        <item>گوریه</item>
+        <item>گوگان</item>
+        <item>گوگد</item>
+        <item>گوهران</item>
+        <item>گهرو</item>
+        <item>گهواره</item>
+        <item>گیان</item>
+        <item>گیلانغرب</item>
+        <item>گیوی</item>
+        <item>لار</item>
+        <item>لالجین</item>
+        <item>لاله زار</item>
+        <item>لالی</item>
+        <item>لامرد</item>
+        <item>لاهرود</item>
+        <item>لاهیجان</item>
+        <item>لای بید</item>
+        <item>لپوئی</item>
+        <item>لردگان</item>
+        <item>لشت نشاء</item>
+        <item>لطف آباد</item>
+        <item>لطیفی</item>
+        <item>لمزان</item>
+        <item>لنده</item>
+        <item>لنگرود</item>
+        <item>لواسان</item>
+        <item>لوجلی</item>
+        <item>لوشان</item>
+        <item>لولمان</item>
+        <item>لومار</item>
+        <item>لوندویل</item>
+        <item>لیسار</item>
+        <item>لیکک</item>
+        <item>لیلان</item>
+        <item>مادرسلیمان</item>
+        <item>مادوان</item>
+        <item>مارگون</item>
+        <item>ماژین</item>
+        <item>ماسال</item>
+        <item>ماسوله</item>
+        <item>ماکلوان</item>
+        <item>ماکو</item>
+        <item>مال خلیفه</item>
+        <item>مامونیه</item>
+        <item>ماه نشان</item>
+        <item>ماهان</item>
+        <item>ماهدشت</item>
+        <item>مبارک آباد</item>
+        <item>مبارک شهر</item>
+        <item>مبارکه</item>
+        <item>مجن</item>
+        <item>محلات</item>
+        <item>محمد آباد</item>
+        <item>محمد آباد</item>
+        <item>محمد آباد</item>
+        <item>محمد شهر</item>
+        <item>محمد یار</item>
+        <item>محمدان</item>
+        <item>محمدشهر</item>
+        <item>محمدی</item>
+        <item>محمدیه</item>
+        <item>محمود آباد</item>
+        <item>محمود آباد</item>
+        <item>محمود آباد نمونه</item>
+        <item>محی آباد</item>
+        <item>مرادلو</item>
+        <item>مراغه</item>
+        <item>مراوه تپه</item>
+        <item>مرجقل</item>
+        <item>مردهک</item>
+        <item>مرزن آباد</item>
+        <item>مرزیکلا</item>
+        <item>مرگنلر</item>
+        <item>مرند</item>
+        <item>مرودشت</item>
+        <item>مروست</item>
+        <item>مریانج</item>
+        <item>مریوان</item>
+        <item>مزایجان</item>
+        <item>مزدآوند</item>
+        <item>مزرعه</item>
+        <item>مس سرچشمه</item>
+        <item>مسجد سلیمان</item>
+        <item>مشراگه</item>
+        <item>مشکات</item>
+        <item>مشکان</item>
+        <item>مشکین دشت</item>
+        <item>مشگین شهر</item>
+        <item>مشهد</item>
+        <item>مشهدریزه</item>
+        <item>مصیری</item>
+        <item>معلم کلایه</item>
+        <item>معمولان</item>
+        <item>مقاومت</item>
+        <item>ملاثانی</item>
+        <item>ملارد</item>
+        <item>ملایر</item>
+        <item>ملک آباد</item>
+        <item>ملکان</item>
+        <item>ممقان</item>
+        <item>منج</item>
+        <item>منجیل</item>
+        <item>منصوریه</item>
+        <item>منظریه</item>
+        <item>منوجان</item>
+        <item>موچش</item>
+        <item>مود</item>
+        <item>مورموری</item>
+        <item>موسیان</item>
+        <item>مومن آباد</item>
+        <item>مهاباد</item>
+        <item>مهاباد</item>
+        <item>مهاجران</item>
+        <item>مهدی شهر</item>
+        <item>مهر</item>
+        <item>مهر</item>
+        <item>مهران</item>
+        <item>مهربان</item>
+        <item>مهردشت</item>
+        <item>مهرستان</item>
+        <item>مهریز</item>
+        <item>میامی</item>
+        <item>میان راهان</item>
+        <item>میاندوآب</item>
+        <item>میانرود</item>
+        <item>میانشهر</item>
+        <item>میانه</item>
+        <item>میبد</item>
+        <item>میداود</item>
+        <item>میرآباد</item>
+        <item>میرجاوه</item>
+        <item>میلاجرد</item>
+        <item>میمند</item>
+        <item>میمه</item>
+        <item>میمه</item>
+        <item>میناب</item>
+        <item>مینودشت</item>
+        <item>مینوشهر</item>
+        <item>نازک علیا</item>
+        <item>ناغان</item>
+        <item>نافچ</item>
+        <item>نالوس</item>
+        <item>نائین</item>
+        <item>نجف آباد</item>
+        <item>نجف شهر</item>
+        <item>نخل تقی</item>
+        <item>ندوشن</item>
+        <item>نراق</item>
+        <item>نرجه</item>
+        <item>نرماشیر</item>
+        <item>نسیم شهر</item>
+        <item>نشتارود</item>
+        <item>نشتیفان</item>
+        <item>نصرآباد</item>
+        <item>نصرآباد</item>
+        <item>نصرت آباد</item>
+        <item>نصیرشهر</item>
+        <item>نظام شهر</item>
+        <item>نظر آباد</item>
+        <item>نظرکهریزی</item>
+        <item>نظنز</item>
+        <item>نقاب</item>
+        <item>نقده</item>
+        <item>نقنه</item>
+        <item>نکا</item>
+        <item>نگار</item>
+        <item>نگور</item>
+        <item>نگین شهر</item>
+        <item>نمین</item>
+        <item>نوبران</item>
+        <item>نوبندگان</item>
+        <item>نوجین</item>
+        <item>نوخندان</item>
+        <item>نودان</item>
+        <item>نودژ</item>
+        <item>نودشه</item>
+        <item>نوده خاندوز</item>
+        <item>نور</item>
+        <item>نورآباد</item>
+        <item>نورآباد</item>
+        <item>نوربهار</item>
+        <item>نوسود</item>
+        <item>نوش آباد</item>
+        <item>نوشهر</item>
+        <item>نوشین</item>
+        <item>نوک آباد</item>
+        <item>نوکنده</item>
+        <item>نهاوند</item>
+        <item>نهبندان</item>
+        <item>نی ریز</item>
+        <item>نیاسر</item>
+        <item>نیر</item>
+        <item>نیر</item>
+        <item>نیشابور</item>
+        <item>نیک آباد</item>
+        <item>نیک پی</item>
+        <item>نیک شهر</item>
+        <item>نیل شهر</item>
+        <item>نیمبلوک</item>
+        <item>نیمور</item>
+        <item>واجارگاه</item>
+        <item>وایقان</item>
+        <item>وحدتیه</item>
+        <item>وحیدیه</item>
+        <item>ورامین</item>
+        <item>وراوی</item>
+        <item>وردنجان</item>
+        <item>ورزقان</item>
+        <item>ورزنه</item>
+        <item>ورنامخواست</item>
+        <item>وزوان</item>
+        <item>ونک</item>
+        <item>ویس</item>
+        <item>ویسیان</item>
+        <item>هادی شهر</item>
+        <item>هادیشهر</item>
+        <item>هارونی</item>
+        <item>هجدک</item>
+        <item>هچیرود</item>
+        <item>هرات</item>
+        <item>هرسین</item>
+        <item>هرمز</item>
+        <item>هرند</item>
+        <item>هریس</item>
+        <item>هشتبندی</item>
+        <item>هشتپر</item>
+        <item>هشتجین</item>
+        <item>هشترود</item>
+        <item>هشتگرد</item>
+        <item>هفت چشمه</item>
+        <item>هفتگل</item>
+        <item>هفشجان</item>
+        <item>هلشی</item>
+        <item>هماشهر</item>
+        <item>هماشهر</item>
+        <item>همت آباد</item>
+        <item>همدان</item>
+        <item>هندودر</item>
+        <item>هندیجان</item>
+        <item>هنزا</item>
+        <item>هوراند</item>
+        <item>هویزه</item>
+        <item>هیدج</item>
+        <item>هیدوچ</item>
+        <item>هیر</item>
+        <item>یاسوج</item>
+        <item>یاسوکند</item>
+        <item>یامچی</item>
+        <item>یزد</item>
+        <item>یزدان شهر</item>
+        <item>یونسی</item>
+    </array>
+    <string name="asset_statements" translatable="false">[{\n  \"relation\": [\"delegate_permission/common.handle_all_urls\"],\n  \"target\": {\n    \"namespace\": \"web\",\n    \"site\": \"https://komodaa.com\",\n  }\n}]</string>
+    <string name="faq">بقیه چی پرسیدن</string>
+    <string name="nav_rules">رسم و رسوم</string>
+    <string name="taptarget_bn_komod_text">از اینجا آیتم هایی که می خوای بفروشی و خریدی رو می بینی.</string>
+    <string name="taptarget_bn_komod_title">کمد من</string>
+</resources>

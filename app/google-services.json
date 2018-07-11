@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "685307750658",
+    "firebase_url": "https://komodaa-d9c7b.firebaseio.com",
+    "project_id": "komodaa-d9c7b",
+    "storage_bucket": "komodaa-d9c7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685307750658:android:2a1919409a5b71f1",
+        "android_client_info": {
+          "package_name": "com.komodaa.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685307750658-9utcf0nio5e0ctm8p424r247d9lr8i1a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm0iAbfYxHYGRuYs2ZW_pQ8cdLL6mGUrw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_my_komod"
+        android:tint="#545454" />
+
+    <TextView
+        android:id="@+id/tvCaption"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/imgIcon"
+        android:fontFamily="@font/iran_sans"
+        android:gravity="center|right"
+        android:text="کمد من"
+        android:textColor="#545454"
+        android:textSize="16sp" />
+</RelativeLayout>

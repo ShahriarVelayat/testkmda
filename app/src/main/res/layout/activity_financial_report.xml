@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.komodaa.app.activities.FinancialReportActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tvCurrentCreditBalance"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tvCurrentCreditBalance"
+            android:gravity="center"
+            android:text="موجودی:"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvCurrentCreditBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@id/tvBalance"
+            android:gravity="center"
+            android:text="۱۰٫۰۰۰ تومان"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvPaymentSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="۱۰٫۰۰۰ تومان"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvSoldSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPaymentSum"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="۱۰٫۰۰۰ تومان"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tvPaymentSum"
+            android:layout_alignTop="@id/tvPaymentSum"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/tvPaymentSum"
+            android:gravity="center"
+            android:text="مجموع پرداختی:"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tvSoldSum"
+            android:layout_alignTop="@id/tvSoldSum"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/tvSoldSum"
+            android:gravity="center"
+            android:text="مجموع فروش:"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="لیست پرداخت های شما در کمدا"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp" />
+</LinearLayout>

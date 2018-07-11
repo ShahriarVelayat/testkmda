@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.komodaa.app.activities.HowToShootActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text="عکس نباید مخالف شئونات کشور ایران باشه."
+            android:textColor="@color/notification_error"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:gravity="right"
+            android:text="چه جوری عکس کمدایی بگیریم؟\n\n• لنز دوربین موبایل رو تمیز کنیم.\n• مراقب نور فلاش در عکس باشیم.\n• فوکوس کنیم.\n• زوم نکنیم.\n• به نور توجه کنیم: «نور بیشتر، عکس بهتر». توصیه می کنیم توی نور روز عکاسی شه.\n• رزولوشن رو بالا ببریم.\n• زاویه‌های متفاوت رو امتحان کنیم. بهترین زاویه برای لباس ها از روبرو و مستقیمه.\n• از نرم افزار های موجود روی گوشیمون برای اصلاح عکسمون استفاده کنیم. اما دقت کنیم رنگ آیتم عوض نشه.\n• پس زمینه رو یه دیوار/کمد/زمین با طرح ساده انتخاب کنیم.\n• مراقب رنگ پس زمینه باشیم که متضاد باشه و به آیتم ما جلوه بده. مثلا اگه آیتم قرمزه، روی کاشی قرمز پهنش نکنیم یا روتختی با طرح های شلوغ رو پس زمینه قرار ندیم.\n• اگر آیتم جزئیاتی داره که از دور مشخص نیست، یه عکس زوم تر هم بگیریم.\n• برای عکس گرفتن وقت بذاریم و سلیقه خرج بدیم. هر چی جزئیات عکس واضح تر و آیتمم مرتب تر باشه، بیشتر به چشم میاد."
+            android:textSize="16sp"/>
+    </LinearLayout>
+</ScrollView>

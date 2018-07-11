@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.komodaa.app.activities.EnterTokenActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="کد تایید براتون پیامک شده و تا چند دقیقه دیگه به دستتون میرسه\nپس از دریافت کد تایید در کادر زیر واردش کنید"
+        android:textSize="16sp"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/metVerificationCode"
+        style="@style/MaterialEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="کد تایید"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textSize="22sp"
+        app:met_helperText=" "
+        app:met_iconRight="@drawable/ic_call_black_24dp"
+        app:met_maxCharacters="6"
+        app:met_minCharacters="6"/>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="54dp"
+        android:background="@color/btn_bg"
+        android:text="بازیابی کلمه عبور"
+        android:textColor="#ffffff"
+        app:rd_enable="true"
+        app:rd_rippleType="wave"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_action_share"
+        android:title="اشتراک گذاری"
+        app:showAsAction="always"/>
+    <!--<item-->
+        <!--android:id="@+id/item_payment_help"-->
+        <!--android:icon="@drawable/ic_action_help"-->
+        <!--android:title="راهنمای خرید"-->
+        <!--app:showAsAction="always"/>-->
+</menu>

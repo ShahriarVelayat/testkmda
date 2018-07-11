@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_my_komod"
+            android:title="@string/my_closet" />
+        <item
+            android:id="@+id/nav_sellers"
+            android:icon="@drawable/ic_action_seller"
+            android:title="@string/top_sellers" />
+        <item
+            android:id="@+id/nav_bookmark"
+            android:icon="@drawable/bookmark_normal"
+            android:title="بوکمارک" />
+        <item
+            android:id="@+id/nav_financial_report"
+            android:icon="@drawable/ic_drawer_report"
+            android:title="@string/financial_report" />
+        <!--<item-->
+        <!--android:id="@+id/nav_request"-->
+        <!--android:icon="@drawable/ic_request_menu"-->
+        <!--android:title="@string/request_item"/>-->
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/radiomoda"
+            android:title="@string/radiomoda" />
+    </group>
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/nav_faq"
+            android:title="@string/faq" />
+        <item
+            android:id="@+id/nav_rules"
+            android:icon="@drawable/ic_nav_rules"
+            android:title="@string/nav_rules" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_contact_us"
+            android:title="@string/contact_us" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/logo_komodaa"
+            android:title="@string/about" />
+    </group>
+
+</menu>

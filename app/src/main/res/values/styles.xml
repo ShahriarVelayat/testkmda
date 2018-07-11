@@ -1,0 +1,136 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#16c76d</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorSwitchThumbNormal">@color/colorPrimaryDark</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:fontFamily">@font/iran_sans</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:fontFamily">@font/iran_sans</item>
+    </style>
+
+    <style name="LightEditText" parent="Material.Widget.EditText.Light">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@color/abc_primary_text_material_light</item>
+        <item name="android:textColorHint">@color/abc_secondary_text_material_light</item>
+        <item name="et_dividerColor">@drawable/color_divider_light</item>
+        <item name="et_labelTextColor">@drawable/color_label_light</item>
+        <item name="et_supportTextErrorColor">#FFFF0000</item>
+        <item name="et_dividerErrorColor">#FFFF0000</item>
+        <item name="et_labelTextAppearance">@style/LabelStyle</item>
+    </style>
+
+    <style name="LabelStyle">
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="MaterialEditText">
+        <item name="met_baseColor">@android:color/black</item>
+        <item name="met_errorColor">#ff0000</item>
+        <item name="met_floatingLabel">highlight</item>
+        <item name="met_iconPadding">0dp</item>
+        <item name="met_primaryColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#615d6e</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabSelectedTextColor">#615d6e</item>
+        <item name="android:fontFamily">@font/iran_sans</item>
+    </style>
+
+    <style name="PageTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/PageTabTextAppearance</item>
+        <item name="tabSelectedTextColor">#6b706a</item>
+        <item name="android:fontFamily">@font/iran_sans</item>
+    </style>
+
+    <!-- for text -->
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:fontFamily">@font/iran_sans</item>
+    </style>
+
+    <style name="PageTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#6b706a</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:fontFamily">@font/iran_sans</item>
+    </style>
+
+    <style name="TextViewTitle" parent="TextAppearance.AppCompat.Medium">
+
+    </style>
+
+    <style name="MenuButtonsGreen">
+        <item name="fab_colorNormal">#16c76d</item>
+        <item name="fab_colorPressed">#2E7D32</item>
+        <item name="fab_colorRipple">#1B5E20</item>
+        <item name="android:fontFamily">@font/iran_sans</item>
+    </style>
+
+    <style name="DarkCircularProgressDrawable" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColor">@android:color/white</item>
+        <item name="cpd_strokeSize">2dp</item>
+        <item name="cpd_padding">2dp</item>
+    </style>
+
+    <style name="LoadingCircularProgressDrawable" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColors">@array/progressColors</item>
+        <item name="cpd_strokeSize">4dp</item>
+        <item name="cpd_padding">2dp</item>
+    </style>
+
+    <array name="progressColors">
+        <item>@color/colorPrimary</item>
+        <item>@color/notification_error</item>
+        <item>@color/btn_bg</item>
+    </array>
+
+    <style name="RateDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/RateDialogAnimation</item>
+    </style>
+
+    <style name="RateDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+</resources>

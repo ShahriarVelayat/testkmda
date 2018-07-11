@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.komodaa.app.activities.ProfileActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnUpdate"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <com.pkmmte.view.CircularImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_account_circle_48px"
+                app:border="true"
+                app:border_color="#EEEEEE"
+                app:border_width="2dp"
+                app:shadow="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgAvatar"
+                android:layout_alignEnd="@+id/imgAvatar"
+                android:layout_alignRight="@+id/imgAvatar"
+                android:src="@drawable/ic_add_circle_black_36dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/metFirstName"
+                style="@style/MaterialEditText"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/imgAvatar"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="نام"
+                android:inputType="textPersonName"
+                app:met_helperText=" "
+                app:met_iconRight="@drawable/ic_person_black_24dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/metLastName"
+                style="@style/MaterialEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/metFirstName"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@+id/metFirstName"
+                android:ems="10"
+                android:gravity="center|center_vertical"
+                android:hint="نام خانوادگی"
+                android:inputType="text"
+
+                app:met_helperText=" "/>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/metEmail"
+                style="@style/MaterialEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/metFirstName"
+                android:ems="10"
+                android:hint="آدرس پست الکترونیکی..."
+                android:inputType="textEmailAddress"
+                app:met_helperText=" "
+                app:met_iconRight="@drawable/ic_email_black_24dp"/>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/metPhoneNumber"
+                style="@style/MaterialEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/metEmail"
+                android:ems="10"
+                android:hint="شماره تلفن همراه"
+                android:inputType="phone"
+                app:met_helperText=" "
+                app:met_iconRight="@drawable/ic_call_black_24dp"
+                app:met_maxCharacters="14"
+                app:met_minCharacters="11"/>
+
+            <ImageView
+                android:id="@+id/imgCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mspCity"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/metPhoneNumber"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_place_black_24dp"/>
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/mspCity"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/metPhoneNumber"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@+id/imgCity"
+                android:background="@drawable/spinner_bg"
+                android:entries="@array/cities"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/metAddress"
+                style="@style/MaterialEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mspCity"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="top"
+                android:hint="آدرس کامل"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:maxLines="5"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/metBank"
+                style="@style/MaterialEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/metAddress"
+
+                android:ems="10"
+                android:hint="نام بانک"
+                android:inputType="textPersonName"
+                app:met_helperText=" "
+                app:met_iconRight="@drawable/ic_account_balance_black_18dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/metShaba"
+                style="@style/MaterialEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/metBank"
+                android:ems="10"
+                android:hint="شماره شبا"
+                android:inputType="numberDecimal"
+                android:paddingLeft="32dp"
+                app:met_helperText=" "
+                android:maxLength="24"
+                app:met_iconRight="@drawable/ic_receipt_black_18dp"
+                app:met_maxCharacters="24"
+
+                app:met_minCharacters="24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/metShaba"
+                android:layout_alignTop="@id/metShaba"
+                android:layout_below="@id/metBank"
+                android:gravity="center"
+                android:text="IR"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvShebaLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/metShaba"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="شماره حساب شبا چیست؟"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <com.rey.material.widget.Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/btn_bg"
+        android:text="ثبت تغییرات"
+        android:textColor="#ffffff"
+        app:rd_enable="true"
+        app:rd_rippleType="wave"/>
+</RelativeLayout>

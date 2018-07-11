@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00ac71</color>
+    <color name="colorPrimaryDark">#00734c</color>
+    <color name="colorAccent">#445ec9</color>
+    <!--<color name="btn_bg">#766f6f</color>-->
+    <color name="btn_bg">#795696</color>
+    <color name="translucent_scrim_top">#4c000000</color>
+    <color name="translucent_scrim_top_center">#2f000000</color>
+    <color name="notification_error">#f5594a</color>
+    <color name="notification_error_dark">#b94439</color>
+    <color name="comment_title">#737373</color>
+    <color name="comment_text">#797979</color>
+    <color name="time_text">#8f8f8f</color>
+    <color name="tabs_bg">#efefef</color>
+
+    <color name="mdtp_accent_color">@color/colorPrimary</color>
+    <color name="mdtp_accent_color_dark">@color/colorPrimaryDark</color>
+    <color name="notification_ok_purple">#b282d8</color>
+    <color name="promoted_item">#f5594a</color>
+    <color name="new_item">#00ac71</color>
+    <color name="used_item">#f7a85a</color>
+    <color name="homemade_item">#673ab7</color>
+
+    <color name="rate_0">#dbdbdb</color>
+    <color name="rate_1">#ff5722</color>
+    <color name="rate_2">#ff9800</color>
+    <color name="rate_3">#cddc39</color>
+    <color name="rate_4">#8bc34a</color>
+    <color name="rate_5">#259b24</color>
+</resources>

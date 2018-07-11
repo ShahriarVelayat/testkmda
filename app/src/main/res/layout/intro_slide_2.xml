@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/intro_2">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="75dp"-->
+        <!--app:srcCompat="@drawable/closet_2"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvDesc"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/imageView2"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="16dp"-->
+        <!--android:text="@string/slide_string_2"-->
+        <!--android:textColor="#4e4d49"-->
+        <!--android:textSize="16sp"/>-->
+</RelativeLayout>

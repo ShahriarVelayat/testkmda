@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/tabs_bg"
+              android:orientation="vertical"
+              android:paddingBottom="4dp"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:paddingTop="4dp">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/metComment"
+        style="@style/MaterialEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="نظر یا سوالت رو اینجا بنویس"
+        android:inputType="textMultiLine|textShortMessage"
+        android:lines="3"
+        android:maxLength="256"
+        android:maxLines="5"
+
+        android:nextFocusLeft="@id/metComment"
+        android:nextFocusUp="@id/metComment"
+        app:met_maxCharacters="256"/>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/btn_bg"
+        android:text="درج نظر"
+        android:textColor="#ffffff"
+        app:rd_enable="true"
+        app:rd_rippleType="wave"/>
+</LinearLayout>
